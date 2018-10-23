@@ -1,4 +1,9 @@
 
+0.0.3 / 2018-10-23
+==================
+
+ * move compass heading calculation to kompas module
+
 0.0.2 / 2018-10-21
 ==================
 
