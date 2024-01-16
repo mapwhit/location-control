@@ -1,7 +1,6 @@
 [![NPM version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
+[![Build Status][build-image]][build-url]
 [![Dependency Status][deps-image]][deps-url]
-[![Dev Dependency Status][deps-dev-image]][deps-dev-url]
 
 # map-location-control
 
@@ -30,16 +29,14 @@ var glc = geoLocationControl({
 
 MIT © [Damian Krzeminski](https://pirxpilot.me)
 
-[npm-image]: https://img.shields.io/npm/v/map-location-control.svg
+[npm-image]: https://img.shields.io/npm/v/map-location-control
 [npm-url]: https://npmjs.org/package/map-location-control
 
-[travis-url]: https://travis-ci.org/furkot/map-location-control
-[travis-image]: https://img.shields.io/travis/furkot/map-location-control.svg
+[build-url]: https://github.com/furkot/map-location-control/actions/workflows/check.yaml
+[build-image]: https://img.shields.io/github/actions/workflow/status/furkot/map-location-control/check.yaml?branch=main
 
-[deps-image]: https://img.shields.io/david/furkot/map-location-control.svg
-[deps-url]: https://david-dm.org/furkot/map-location-control
+[deps-image]: https://img.shields.io/librariesio/release/npm/map-location-control
+[deps-url]: https://libraries.io/npm/map-location-control
 
-[deps-dev-image]: https://img.shields.io/david/dev/furkot/map-location-control.svg
-[deps-dev-url]: https://david-dm.org/furkot/map-location-control?type=dev
 
 [mapbox-gl-js]: https://github.com/mapbox/mapbox-gl-js
