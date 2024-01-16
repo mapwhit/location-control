@@ -1,4 +1,10 @@
 
+0.0.5 / 2024-01-16
+==================
+
+ * replace Travis CI with github actions
+ * replace mocha with node:test
+
 0.0.4 / 2018-10-23
 ==================
 
