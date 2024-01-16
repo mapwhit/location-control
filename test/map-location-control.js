@@ -1,5 +1,6 @@
-var should = require('should');
-var mlc = require('../');
+const { describe, it, beforeEach } = require('node:test');
+const assert = require('assert/strict');
+const mlc = require('../');
 
 function dummyMap(document) {
   function noop() {}
@@ -22,23 +23,21 @@ function dummyMap(document) {
   };
 }
 
-describe('map-location-control', function () {
+describe('map-location-control', () => {
   beforeEach(function () {
     document.body.innerHTML = '<div id="map-container"></div>';
     this.map = dummyMap(document);
   });
 
   it('must add and remove location control', function () {
-    var location = mlc();
-    var el = location.onAdd(this.map);
+    const location = mlc();
+    const el = location.onAdd(this.map);
 
-    should.exist(el);
-    el.className.should.be.eql('mapboxgl-ctrl mapboxgl-user-location');
+    assert(el);
+    assert.equal(el.className, 'mapboxgl-ctrl mapboxgl-user-location');
 
     location.onRemove();
 
-    should.not.exist(document.querySelector('mapboxgl-ctrl'));
+    assert(!document.querySelector('mapboxgl-ctrl'));
   });
-
-
 });
