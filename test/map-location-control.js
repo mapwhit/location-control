@@ -1,14 +1,15 @@
-const { describe, it, beforeEach } = require('node:test');
-const assert = require('assert/strict');
-const mlc = require('../');
+import assert from 'node:assert/strict';
+import { beforeEach, describe, it } from 'node:test';
+
+import mlc from '../lib/map-location-control.js';
 
 function dummyMap(document) {
   function noop() {}
 
-  function project([ lon, lat ]) {
-    const x = Math.floor( lon * 5 );
-    const y = Math.floor( lat * 3 );
-    return [ x, y ];
+  function project([lon, lat]) {
+    const x = Math.floor(lon * 5);
+    const y = Math.floor(lat * 3);
+    return [x, y];
   }
 
   function getContainer() {
