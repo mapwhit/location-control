@@ -7,7 +7,12 @@
     "email": "pirxpilot@furkot.com",
     "url": "https://pirxpilot.me"
   },
-  "repository": "furkot/map-location-control",
+  "type": "module",
+  "exports": "./lib/map-location-control.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/furkot/map-location-control.git"
+  },
   "license": "MIT",
   "keywords": [
     "map-location-control",
@@ -28,7 +33,6 @@
     "test": "make check"
   },
   "files": [
-    "index.js",
     "lib"
   ]
 }

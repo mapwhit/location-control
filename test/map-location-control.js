@@ -1,6 +1,7 @@
-const { describe, it, beforeEach } = require('node:test');
-const assert = require('node:assert/strict');
-const mlc = require('../');
+import assert from 'node:assert/strict';
+import { beforeEach, describe, it } from 'node:test';
+
+import mlc from '../lib/map-location-control.js';
 
 function dummyMap(document) {
   function noop() {}
