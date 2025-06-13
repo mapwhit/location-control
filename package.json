@@ -21,12 +21,12 @@
     "vector"
   ],
   "dependencies": {
-    "html5-geolocation": "^2.0.0",
-    "kompas": "^0.0.1"
+    "html5-geolocation": "~3",
+    "kompas": "~1"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
-    "jsdom": "~23",
+    "jsdom": "~26",
     "jsdom-global": "~3"
   },
   "scripts": {
