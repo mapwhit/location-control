@@ -20,7 +20,7 @@
     "kompas": "^0.0.1"
   },
   "devDependencies": {
-    "@pirxpilot/jshint": "~3",
+    "@biomejs/biome": "^1.9.4",
     "jsdom": "~23",
     "jsdom-global": "~3"
   },

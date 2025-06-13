@@ -1,14 +1,14 @@
 const { describe, it, beforeEach } = require('node:test');
-const assert = require('assert/strict');
+const assert = require('node:assert/strict');
 const mlc = require('../');
 
 function dummyMap(document) {
   function noop() {}
 
-  function project([ lon, lat ]) {
-    const x = Math.floor( lon * 5 );
-    const y = Math.floor( lat * 3 );
-    return [ x, y ];
+  function project([lon, lat]) {
+    const x = Math.floor(lon * 5);
+    const y = Math.floor(lat * 3);
+    return [x, y];
   }
 
   function getContainer() {
