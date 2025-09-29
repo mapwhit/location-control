@@ -1,5 +1,5 @@
 {
-  "name": "map-location-control",
+  "name": "@mapwhit/location-control",
   "version": "1.0.0",
   "description": "Geolocation control that can be used with vector map renderer.",
   "author": {
@@ -11,7 +11,7 @@
   "exports": "./lib/map-location-control.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/furkot/map-location-control.git"
+    "url": "git+https://github.com/mapwhit/location-control.git"
   },
   "license": "MIT",
   "keywords": [

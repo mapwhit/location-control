@@ -2,41 +2,39 @@
 [![Build Status][build-image]][build-url]
 [![Dependency Status][deps-image]][deps-url]
 
-# map-location-control
+# @mapwhit/location-control
 
 Geo-location control that can be used with vector map renderer: a simplified version of the `GeoLocationControl` implemented in [mapbox-gl-js]
 
 ## Install
 
 ```sh
-$ npm install --save map-location-control
+$ npm install --save @mapwhit/location-control
 ```
 
 ## Usage
 
 ```js
-var geoLocationControl = require('map-location-control');
+import locationControl = require('@mapwhit/location-control');
 
-var glc = geoLocationControl({
-  maxWidth: 150,
-  unit: 'imperial'
- });
+const mlc = locationControl();
 
- map.addControl(glc);
+ map.addControl(mlc);
+ mlc.startTracking();
 ```
 
 ## License
 
 MIT © [Damian Krzeminski](https://pirxpilot.me)
 
-[npm-image]: https://img.shields.io/npm/v/map-location-control
-[npm-url]: https://npmjs.org/package/map-location-control
+[npm-image]: https://img.shields.io/npm/v/@mapwhit/location-control
+[npm-url]: https://npmjs.org/package/@mapwhit/location-control
 
-[build-url]: https://github.com/furkot/map-location-control/actions/workflows/check.yaml
-[build-image]: https://img.shields.io/github/actions/workflow/status/furkot/map-location-control/check.yaml?branch=main
+[build-url]: https://github.com/mapwhit/location-control/actions/workflows/check.yaml
+[build-image]: https://img.shields.io/github/actions/workflow/status/mapwhit/location-control/check.yaml?branch=main
 
-[deps-image]: https://img.shields.io/librariesio/release/npm/map-location-control
-[deps-url]: https://libraries.io/npm/map-location-control
+[deps-image]: https://img.shields.io/librariesio/release/npm/@mapwhit/location-control
+[deps-url]: https://libraries.io/npm/@mapwhit%2Flocation-control
 
 
 [mapbox-gl-js]: https://github.com/mapbox/mapbox-gl-js
